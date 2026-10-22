@@ -25,12 +25,26 @@ Regiontrace checked each page in the light and the dark color scheme. With the c
 - On the Run the model button, the shortcut label had too little contrast with its background.
 - On the Validation page, a keyboard user was not able to scroll a wide table.
 
-After the repairs, Regiontrace found no failures on these pages with the checker. With an automated checker, a person finds only part of the problems on a site. Regiontrace did not test the site by hand with only a keyboard, with a screen reader or at 200 percent zoom.
+With an automated checker, a person finds only part of the problems on a site. On the same day, Regiontrace also did these checks by hand:
+
+- With only a keyboard, Regiontrace made a new project, added a region and an event, ran the model and read the results. Regiontrace marks each item that has the keyboard's focus.
+- Regiontrace looked at each page at 200 percent zoom, and on screens 320 and 390 pixels wide. Regiontrace looked for text past the edge of the screen.
+- On the map, Regiontrace measured the contrast of each kind of label against the colors behind it.
+
+With these checks, Regiontrace found five more problems, and it repaired all five on the same day:
+
+- In the bar charts of output by year and by region, you saw the parts of a bar only with a mouse. The parts are the direct, indirect and induced effects. Now you see the parts of a bar when the bar has the keyboard's focus or when you tap it. For screen readers, Regiontrace names the parts and the total of each bar.
+- On the map, the names of counties had a contrast of 3.8 to 1 where they lie over a region. Now each name has a light outline, and the contrast is at least 6 to 1.
+- On a narrow screen, three parts were wider than the screen. These parts were the menu at the top, the table of regions in the Workspace and the wide tables on the Methods page. Now each of them scrolls in its own box.
+- After you selected Add an event, the keyboard's focus stayed on that link. Now the focus goes to the new event's first field.
+- In the searches for areas and industries, a screen reader did not know which result was active. Now Regiontrace tells a screen reader which result is active.
+
+After the repairs, Regiontrace found no failures with the checker or by hand on these pages.
 
 ## Known limits
 
-- In the bar charts of output by year and by region, you see the parts of a bar only with a mouse. The parts are the direct, indirect and induced effects. You can read the total of each bar as text. In the Excel download of a study, you get the figures by region and by year.
-- With the checker, Regiontrace was not able to measure the color contrast of 7 labels on the map, such as place names. Regiontrace must check these labels by hand.
+- Regiontrace did not test the site with a screen reader.
+- On a narrow screen, you see only part of a long title in the title box of a report. You can move through the title with the arrow keys.
 - Clerk, the sign-in service of Regiontrace, supplies the sign-in form and the account settings window. Regiontrace does not control the accessibility of these parts.
 
 ## Feedback

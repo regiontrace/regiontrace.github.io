@@ -4,8 +4,8 @@ Pages leaves out folders whose names start with "_", so this folder stays off th
     pip install markdown
     python3 _src/build.py .
 
-writes privacy/index.html, terms/index.html and accessibility/index.html. Change the date
-in UPDATED with the text.
+writes privacy/index.html, terms/index.html and accessibility/index.html. When a page's
+text changes, change its date in PAGES.
 """
 import html
 import re
@@ -15,11 +15,11 @@ from pathlib import Path
 import markdown
 
 HERE = Path(__file__).parent
-UPDATED = "October 21, 2026"
 PAGES = {
-    "privacy": ("Privacy policy", "How Regiontrace collects, uses and protects your information.", True),
-    "terms": ("Terms of use", "The terms for your use of Regiontrace.", True),
-    "accessibility": ("Accessibility statement", "The accessibility of Regiontrace, its known limits and how to report a problem.", False),
+    # slug: title, description, adapted from Basecamp's policies, date of the last change
+    "privacy": ("Privacy policy", "How Regiontrace collects, uses and protects your information.", True, "October 21, 2026"),
+    "terms": ("Terms of use", "The terms for your use of Regiontrace.", True, "October 21, 2026"),
+    "accessibility": ("Accessibility statement", "The accessibility of Regiontrace, its known limits and how to report a problem.", False, "October 22, 2026"),
 }
 CREDIT = ('<p class="credit">Adapted from the <a href="https://github.com/basecamp/policies">Basecamp '
           'open-source policies</a> / <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>')
@@ -99,7 +99,7 @@ def footer(current: str) -> str:
 
 
 def page(slug: str) -> str:
-    title, description, adapted = PAGES[slug]
+    title, description, adapted, updated = PAGES[slug]
     md = markdown.Markdown(extensions=["tables", "toc", "sane_lists"])
     text = (HERE / f"{slug}.md").read_text()
     body = md.convert(text)
@@ -142,7 +142,7 @@ def page(slug: str) -> str:
 
   <main id="content">
   {h1}</h1>
-  <p class="updated">Last updated: {UPDATED}</p>
+  <p class="updated">Last updated: {updated}</p>
   {toc}{rest.strip()}
   {CREDIT if adapted else ""}
   </main>
