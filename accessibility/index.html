@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility statement · Regiontrace</title>
+<meta name="description" content="The accessibility of Regiontrace, its known limits and how to report a problem.">
+<link rel="canonical" href="https://regiontrace.com/accessibility/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14171a" media="(prefers-color-scheme: dark)">
+<style>
+  :root {
+    --bg: #f7f6f2;
+    --ink: #1b1f23;
+    --muted: #5b6168;
+    --line: #dddbd3;
+    --accent: #1f6f6a;
+    --accent-soft: #e3eeec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171a;
+      --ink: #e8e6e1;
+      --muted: #a3a8ad;
+      --line: #343a40;
+      --accent: #6cc2b9;
+      --accent-soft: #1d2b2a;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.6 ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 20px 40px; }
+  header { display: flex; align-items: center; gap: 12px; }
+  header svg { width: 34px; height: 34px; flex: none; }
+  .home { display: flex; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; }
+  .wordmark { font-size: 22px; font-weight: 650; letter-spacing: -0.01em; }
+  .signin { margin-left: auto; padding: 6px 16px; border: 1px solid var(--accent); border-radius: 8px; font-size: 15px; font-weight: 550; text-decoration: none; }
+  .signin:hover { background: var(--accent-soft); }
+  .skip { position: absolute; left: -9999px; }
+  .skip:focus { left: 16px; top: 12px; background: var(--bg); padding: 4px 8px; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  h1, h2 { font-family: ui-serif, Georgia, "Times New Roman", serif; font-weight: 500; letter-spacing: -0.01em; }
+  h1 { font-size: clamp(32px, 6vw, 44px); line-height: 1.15; margin: 56px 0 8px; }
+  h2 { font-size: 26px; line-height: 1.25; margin: 44px 0 12px; }
+  h3 { font-size: 17px; font-weight: 650; margin: 28px 0 6px; }
+  p { margin: 0 0 16px; }
+  ul, ol { margin: 0 0 16px; padding-left: 24px; }
+  li { margin: 6px 0; }
+  .updated { color: var(--muted); font-size: 15px; margin-bottom: 28px; }
+  .toc { margin: 0 0 8px; padding: 14px 20px; background: var(--accent-soft); border-radius: 10px; font-size: 15px; }
+  .toc h2 { font-family: inherit; font-size: 15px; font-weight: 650; margin: 0 0 6px; letter-spacing: 0; }
+  .toc ol { margin: 0; }
+  .toc li { margin: 2px 0; }
+  .table { overflow-x: auto; margin: 0 0 16px; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--line); }
+  th { font-weight: 650; }
+  .credit { margin-top: 40px; font-size: 14px; color: var(--muted); }
+  footer { margin-top: 48px; font-size: 14px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 18px; }
+  footer a { color: var(--muted); }
+  footer a[aria-current] { color: var(--ink); text-decoration: none; }
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<div class="wrap">
+  <header>
+    <a class="home" href="/">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <rect x="1.5" y="1.5" width="29" height="29" rx="7" fill="none" stroke="currentColor" stroke-width="2" opacity=".35"/>
+        <path d="M6 23 L12 15 L17 19 L25 8" fill="none" stroke="var(--accent)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="25" cy="8" r="2.6" fill="var(--accent)"/>
+      </svg>
+      <span class="wordmark">Regiontrace</span>
+    </a>
+    <a class="signin" href="https://model.regiontrace.com/">Sign in</a>
+  </header>
+
+  <main id="content">
+  <h1 id="accessibility-statement">Accessibility statement</h1>
+  <p class="updated">Last updated: October 21, 2026</p>
+  <p>Regiontrace wants every person, also people with disabilities, to be able to use regiontrace.com and the model at model.regiontrace.com.</p>
+<nav class="toc" aria-labelledby="contents">
+    <h2 id="contents">Contents</h2>
+    <ol>
+      <li><a href="#the-standard">The standard</a></li>
+      <li><a href="#status">Status</a></li>
+      <li><a href="#how-regiontrace-checks-the-site">How Regiontrace checks the site</a></li>
+      <li><a href="#known-limits">Known limits</a></li>
+      <li><a href="#feedback">Feedback</a></li>
+      <li><a href="#technical-details">Technical details</a></li>
+    </ol>
+  </nav>
+<h2 id="the-standard">The standard</h2>
+<p>Regiontrace aims to meet the Web Content Accessibility Guidelines (WCAG) 2.1 at level AA. The World Wide Web Consortium (W3C) publishes these guidelines. They tell designers how to make web content usable for more people with disabilities.</p>
+<h2 id="status">Status</h2>
+<p>Regiontrace partially conforms to WCAG 2.1 level AA. "Partially conforms" means that some parts of the site do not fully meet the standard yet.</p>
+<h2 id="how-regiontrace-checks-the-site">How Regiontrace checks the site</h2>
+<p>On October 21, 2026, Regiontrace checked these pages with axe-core 4.10, an automated checker, against the rules of WCAG 2.1 levels A and AA:</p>
+<ul>
+<li>the sign-in page;</li>
+<li>the Projects page;</li>
+<li>the Workspace, before and after a run of the model;</li>
+<li>the Report, Methods and Validation pages;</li>
+<li>the home page and the policy pages of regiontrace.com.</li>
+</ul>
+<p>Regiontrace checked each page in the light and the dark color scheme. With the checker, Regiontrace found two problems, and it repaired both on the same day:</p>
+<ul>
+<li>On the Run the model button, the shortcut label had too little contrast with its background.</li>
+<li>On the Validation page, a keyboard user was not able to scroll a wide table.</li>
+</ul>
+<p>After the repairs, Regiontrace found no failures on these pages with the checker. With an automated checker, a person finds only part of the problems on a site. Regiontrace did not test the site by hand with only a keyboard, with a screen reader or at 200 percent zoom.</p>
+<h2 id="known-limits">Known limits</h2>
+<ul>
+<li>In the bar charts of output by year and by region, you see the parts of a bar only with a mouse. The parts are the direct, indirect and induced effects. You can read the total of each bar as text. In the Excel download of a study, you get the figures by region and by year.</li>
+<li>With the checker, Regiontrace was not able to measure the color contrast of 7 labels on the map, such as place names. Regiontrace must check these labels by hand.</li>
+<li>Clerk, the sign-in service of Regiontrace, supplies the sign-in form and the account settings window. Regiontrace does not control the accessibility of these parts.</li>
+</ul>
+<h2 id="feedback">Feedback</h2>
+<p>If you find a problem with the accessibility of Regiontrace, send an email to <a href="mailto:hello@regiontrace.com">hello@regiontrace.com</a>. Tell Regiontrace the page, the problem, and the browser and assistive technology that you use. Regiontrace answers within 5 business days. If you cannot use a part of the site, Regiontrace can give you the information in another format.</p>
+<h2 id="technical-details">Technical details</h2>
+<p>Regiontrace supports the current versions of Chrome, Edge, Firefox and Safari. To use the model at model.regiontrace.com, you need JavaScript. Regiontrace uses these technologies for accessibility: HTML, CSS, WAI-ARIA and SVG.</p>
+  
+  </main>
+
+  <footer>
+    <span>&copy; 2026 Regiontrace</span>
+    <a href="/privacy/">Privacy</a>
+    <a href="/terms/">Terms</a>
+    <a href="/accessibility/" aria-current="page">Accessibility</a>
+    <a href="https://www.linkedin.com/company/regiontrace">LinkedIn</a>
+  </footer>
+</div>
+</body>
+</html>
