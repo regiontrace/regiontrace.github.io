@@ -67,11 +67,9 @@ When you use Regiontrace, you must not do these things:
 
 If you break these rules, Regiontrace can suspend or close your account without notice. To report misuse, send an email to [hello@regiontrace.com](mailto:hello@regiontrace.com).
 
-## Public data and the Census Bureau
+## Public data
 
 Regiontrace builds its model from statistics of government agencies, such as the Bureau of Economic Analysis, the Bureau of Labor Statistics and the Census Bureau. These agencies do not endorse or certify Regiontrace or its results.
-
-This product uses the Census Bureau Data API but is not endorsed or certified by the Census Bureau.
 
 Agencies revise their statistics and correct errors in them. Regiontrace lists the sources and the data release of each result, so that you can check it.
 
