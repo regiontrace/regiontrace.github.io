@@ -123,7 +123,7 @@ Regiontrace gives these rights to every person, in every country:
 
 To use a right, send an email to [hello@regiontrace.com](mailto:hello@regiontrace.com) from the email address of your account. Regiontrace answers within 30 days. If you write from a different address, Regiontrace can ask you to confirm the request from the address of your account.
 
-In your account settings, you can also delete your sign-in. With that button, you delete only your sign-in, not your projects. To delete your projects too, send an email to Regiontrace.
+In your account settings, you can also delete your sign-in. With that button, you delete only your sign-in at Clerk. Regiontrace keeps your projects, its copy of your name and email address, and your counts. To delete these too, send an email to Regiontrace.
 
 Regiontrace does not track you on other websites. Thus Regiontrace treats each visit the same way, with or without a Do Not Track signal from your browser.
 

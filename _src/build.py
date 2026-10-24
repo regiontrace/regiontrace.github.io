@@ -17,7 +17,7 @@ import markdown
 HERE = Path(__file__).parent
 PAGES = {
     # slug: title, description, adapted from Basecamp's policies, date of the last change
-    "privacy": ("Privacy policy", "How Regiontrace collects, uses and protects your information.", True, "October 21, 2026"),
+    "privacy": ("Privacy policy", "How Regiontrace collects, uses and protects your information.", True, "October 23, 2026"),
     "terms": ("Terms of use", "The terms for your use of Regiontrace.", True, "October 21, 2026"),
     "accessibility": ("Accessibility statement", "The accessibility of Regiontrace, its known limits and how to report a problem.", False, "October 23, 2026"),
 }
@@ -26,10 +26,10 @@ CREDIT = ('<p class="credit">Adapted from the <a href="https://github.com/baseca
 
 STYLE = """
   :root {
-    --bg: #f7f6f2;
+    --bg: #ffffff;
     --ink: #1b1f23;
     --muted: #5b6168;
-    --line: #dddbd3;
+    --line: #dadcdf;
     --accent: #1f6f6a;
     --accent-soft: #e3eeec;
   }
@@ -125,7 +125,7 @@ def page(slug: str) -> str:
 <meta name="description" content="{description}">
 <link rel="canonical" href="{url}">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#14171a" media="(prefers-color-scheme: dark)">
 <style>{STYLE}</style>
 </head>
