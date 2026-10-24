@@ -19,7 +19,7 @@ PAGES = {
     # slug: title, description, adapted from Basecamp's policies, date of the last change
     "privacy": ("Privacy policy", "How Regiontrace collects, uses and protects your information.", True, "October 21, 2026"),
     "terms": ("Terms of use", "The terms for your use of Regiontrace.", True, "October 21, 2026"),
-    "accessibility": ("Accessibility statement", "The accessibility of Regiontrace, its known limits and how to report a problem.", False, "October 22, 2026"),
+    "accessibility": ("Accessibility statement", "The accessibility of Regiontrace, its known limits and how to report a problem.", False, "October 23, 2026"),
 }
 CREDIT = ('<p class="credit">Adapted from the <a href="https://github.com/basecamp/policies">Basecamp '
           'open-source policies</a> / <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>')
